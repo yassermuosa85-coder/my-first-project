@@ -1,0 +1,21 @@
+{
+  "allowedDomains": [
+    "*.cloudfront.net"
+  ],
+  "cors": {
+    "allowedOrigins": [
+      "*.cloudfront.net"
+    ],
+    "allowedMethods": ["GET", "HEAD", "OPTIONS"],
+    "allowedHeaders": ["*"],
+    "maxAgeSeconds": 86400
+  },
+  "contentSecurityPolicy": {
+    "defaultSrc": ["'self'"],
+    "scriptSrc": ["'self'", "*.cloudfront.net"],
+    "styleSrc": ["'self'", "*.cloudfront.net"],
+    "imgSrc": ["'self'", "*.cloudfront.net", "data:"],
+    "fontSrc": ["'self'", "*.cloudfront.net"],
+    "connectSrc": ["'self'", "*.cloudfront.net"]
+  }
+}
